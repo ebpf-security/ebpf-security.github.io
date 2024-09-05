@@ -10,7 +10,7 @@ var CoreUtil = (function () {
             cache: false,
             async: async == undefined ? true : async,
             data: params,
-            type: method == "GET",
+            type: "GET",
             contentType: contentType == undefined ? 'application/json; charset=UTF-8': contentType ,
             dataType: "json",
             beforeSend: function(request) {
