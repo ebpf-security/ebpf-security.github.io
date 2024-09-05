@@ -1,0 +1,36 @@
+{
+ "id":1,
+ "result":[{
+  "procname":"/usr/sbin/sshd",
+  "note":"sshd",
+  "enabled":"on",
+  "listen":"1",
+  "proto":"6"
+},{
+  "procname":"/usr/bin/wget",
+  "note":"wget",
+  "enabled":"on",
+  "listen":"0",
+  "proto":"6"
+},{
+  "procname":"/hiproc/bin/web2hfwd",
+  "note":"web2hfwd",
+  "enabled":"on",
+  "listen":"1",
+  "proto":"6"
+},{
+  "procname":"/usr/bin/curl",
+  "note":"curl",
+  "enabled":"on",
+  "listen":"0",
+  "proto":"17"
+}],
+"totalRows":4,
+"tcp":"3",
+"udp":"2",
+"icmp":"0",
+"date":"2024-09-05",
+"proc_date":"2024-09-05",
+"k_drv":"1",
+"error_code":"0"
+}

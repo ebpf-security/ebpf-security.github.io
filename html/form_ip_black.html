@@ -1,0 +1,54 @@
+<form id="addOrUpdateForm" lay-filter="addOrUpdateForm" class="layui-form model-form">
+	  <input name="enabled" type="hidden" value="on"/>
+	  
+    <div class="layui-form-item">
+        <label class="layui-form-label layui-form-required">IP && Mask</label>
+        <div class="layui-input-block">
+            <input name="ipaddr" class="layui-input" placeholder="Such as:192.168.1.1/32 or f80:1:2:3::/64" lay-verType="tips" lay-verify="required|ipaddr" required/>
+        </div>
+    </div>
+     
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">Close</button>
+        <button class="layui-btn" lay-filter="formSubmitBtn" lay-submit>Submit</button>
+    </div>
+</form>
+<script src="/assets/js/common.js"></script>
+<script>
+    layui.use(['layer', 'form', 'admin', 'xnUtil'], function () {
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var form = layui.form;
+        var admin = layui.admin;   
+        var editData = admin.getLayerData('#addOrUpdateForm').data;
+        var rowindex = layui.sessionData('rowindex').rowindex;        
+
+        form.val('addOrUpdateForm', editData); 
+                 
+        form.render();     
+        
+        form.verify({
+					 ipaddr: [	
+					  /^[0-9.:a-f/]/
+					 ,'Please enter the IP4 address/mask  or IP6 address/prefix correctly'
+					 ] 
+				});  
+      
+        // 
+        form.on('submit(formSubmitBtn)', function (data) {
+            layer.load(2);
+            var mtd = editData ? 'set' : 'add';
+            var url = getProjectUrl() + 'admin/badip?token=' + CoreUtil.getStok("token");
+ 
+            CoreUtil.sendAjax(url, CoreUtil.encode_str(mtd,JSON.stringify(data.field),rowindex), function (res) { 
+                 admin.putLayerData('formOk', true, '#addOrUpdateForm');
+                 admin.closeDialog('#addOrUpdateForm');                 
+            }, "POST", false, function (res) {            	
+                 layer.msg("No permission,please log in again!");
+            });           
+   
+            return false;
+        });
+
+    });
+</script>

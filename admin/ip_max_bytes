@@ -1,0 +1,14 @@
+{
+ "code":0,
+  "msg": "",
+  "result":{"syn":"7","bytes_in":"3","bytes_out":"2","packets_in":"6357","packets_out":"6389"},
+ "test":[],
+"totalRows":0,
+"tcp":"0",
+"udp":"0",
+"icmp":"0",
+"date":"2024-09-04",
+"proc_date":"2024-09-04",
+"k_drv":"0",
+"error_code":"0"
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Open Source</title>
+    <link rel="stylesheet" href="/assets/libs/layui/css/layui.css"/>
+    <link rel="stylesheet" href="/assets/module/admin.css?v=32"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .layui-form-label {
+        	  text-align: left;
+            width: 180px;
+        }
+        .layui-form-item .layui-input-inline {
+         width: 300px;
+        }
+    </style>  
+</head>
+<body>
+
+<div class="layui-fluid" id="LAY_page_other">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm6">
+        	   <div class="layui-card">
+        	   	  <div class="layui-card-header">1. Licence </div>
+                <div class="layui-card-body"
+                     style="padding: 10px 20px 30px 20px;height: 300px;box-sizing: border-box;">
+               <form class="layui-form" action="">   
+               	    
+                  <div class="layui-form-item">
+                    <label class="layui-form-label  layui-form-required">ID</label>
+                    <div class="layui-input-inline">
+                       <input type="text" name="serverid" lay-verify="required" placeholder=""  autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">(Send it to us via email or social media)</div>
+                  </div> 
+                  
+                 <div class="layui-form-item">
+                    <label class="layui-form-label  layui-form-required">Licence</label>
+                    <div class="layui-input-inline">
+                       <input type="text" name="serial" lay-verify="required" placeholder=""  autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux"></div>
+                  </div> 
+                  
+                   <div class="layui-form-item">
+                      <label class="layui-form-label"> Valid date</label>                   
+                      <div class="layui-form-mid"  id="valid"> </div>
+                  </div> 
+                  
+                
+                 
+                <div class="layui-form-item">
+                  <div class="layui-form-label">
+                    <button  type="submit" class="layui-btn layui-btn-normal" lay-submit="" lay-filter="submit">Submit</button>                
+                  </div>
+               </div>
+                                
+               </form>                   
+
+               </div>
+            </div>
+            <!--<div class="layui-card">
+                <div class="layui-card-header">1. Main functions </div>
+                <div class="layui-card-body"
+                     style="padding: 10px 20px 30px 20px;height: 300px;box-sizing: border-box;">
+                    <p class="layui-text" style="margin-bottom: 10px;">
+                        OpenHFW  consists of process firewall, traffic firewall and HIDS...<br><br>
+                        1.The Process firewall comprehensively records and displays the access IP, incoming and outgoing traffic.<br><br>
+                        2.Hidden processes or unkown network traffic, will be regarded as high-threat trojans.<br><br>
+                        3.SSH focuses on auditing the behavior of system administrators ,becuse some terminals may be controlled by hackers.<br><br>
+                        4.HIDS includes file modify monitoring, weak password scanning, vulnerability scanning, etc...
+                                       
+                        <br>
+                    </p>                 
+                </div>
+            </div>-->
+        </div>
+        
+        <div class="layui-col-sm6">  
+            <div class="layui-card">
+                <div class="layui-card-header">2.Pricing (Pay with paypal or alipay 50% off)</div>
+                <div class="layui-card-body" style="padding: 10px 20px 30px 20px;height: 260px">
+                    <table class="layui-table layui-text">
+                        <colgroup>
+                            <col width="180">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <script type="text/html" ew-tpl>
+                        	 <tr>
+                                <td>Product Name</td>
+                                <td>Open Source Host-based FireWall (OpenHFW)</td>
+                            </tr>
+                            <tr>
+                                <td>1 Licence</td>
+                                <td>$199 USD annually
+                                </td>
+                            </tr>                            
+                            <tr>
+                                <td>10 Licences</td>
+                                <td>$999 USD annually
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>100 Licences</td>
+                                <td>$5999 USD annually
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Technical Support</td>
+                                <td>$999 USD annually  ,only Email or SSH remote
+                                </td>
+                            </tr>
+                            
+                           
+                            <tr>
+                                <td>Open Source</td>
+                                <td>$19999 USD annually ,you can use it for any commercial business
+                                </td>
+                            </tr>
+                          
+                           
+                        </script>
+                                                            
+                   
+                        </tbody>
+                    </table>
+                </div>
+            </div>   
+        </div>
+
+
+          <div class="layui-col-sm6">
+            <div class="layui-card">
+                <div class="layui-card-header">3.System Requirements </div>
+                <div class="layui-card-body text-center" style="height: 300px;box-sizing: border-box;">
+                      <div class="layui-form" style="padding: 0 15px">
+                        <table class="layui-table">
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td>Linux Support</td>
+                                <td>CentOS、Debian、Ubuntu、Fedora...</td>
+                            </tr>
+                            <tr>
+                                <td>Architecture</td>
+                                <td>x86 amd64</td>
+                            </tr>
+                            <tr>
+                                <td>Kernel Version</td>
+                                <td>>=3.10</td>
+                            </tr>
+                            <tr>
+                                <td>Server Type</td>
+                                <td>Virtual machines, cloud hosts, and physical server are all supported</td>
+                            </tr>
+                            
+                             <tr>
+                                <td>Hardware Requirements</td>
+                                <td>1 CPU/ 1G Memory /10G Disk </td>
+                            </tr>
+                         
+                            </tbody>
+                        </table>
+                    </div>
+                           
+                           
+                           
+                </div>
+                
+            </div>    
+        </div>  
+        
+        
+          <div class="layui-col-sm6">
+            <div class="layui-card">
+                <div class="layui-card-header">4.Payment </div>
+                <div class="layui-card-body text-left" style="height: 300px;box-sizing: border-box;">
+                	<table class="layui-table layui-text">
+                        <colgroup>
+                            <col width="180">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                        <script type="text/html" ew-tpl>
+                        	 <tr>
+                                <td>BTC</td>
+                                <td>3HaFL4nkBpxuecvBXsXz7zV7FbhaBDJrmU</td>
+                            </tr>
+                            <tr>
+                                <td>ETH</td>
+                                <td>0x68Dc2A7023fDf1e0F64c4b9a2Cf9B5d3aa06F433
+                                </td>
+                            </tr>                            
+                            <tr>
+                                <td>Paypal</td>
+                                <td>
+                                </td>
+                            </tr>                            
+                   
+                              <tr>
+                                <td>Alipay</td>
+                                <td>4108863@qq.com
+                                </td>
+                            </tr>
+                          
+                          
+                            <tr>
+                                <td>Wechat</td>
+                                <td>httpwaf
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>contact us</td>
+                                <td>4108863@qq.com    &nbsp;&nbsp;(Please contact us via email or wechat after payment)
+                                </td>
+                            </tr>
+                          
+                           
+                        </script>
+                                                            
+                   
+                        </tbody>
+                    </table>
+                    <!--<div id="otherQRCode" class="layui-inline"></div> 
+                    <p class="layui-text" style="margin-bottom: 10px;">
+                        Wechat QRCode<br>                    
+                    </p> -->        
+                </div>
+                
+            </div>    
+        </div>       
+        
+     
+    </div>
+</div>
+
+<!-- js -->
+<script src="/assets/libs/layui/layui.js"></script>
+<script src="/assets/js/common.js"></script>
+<script src="/assets/js/jquery-3.2.1.min.js" ></script>
+<script src="/assets/js/util.js"></script>
+
+<script>
+    layui.use(['layer', 'form', 'admin', 'xnUtil'], function () {
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var form = layui.form;
+        var admin = layui.admin;
+        var xnUtil = layui.xnUtil;
+        var URL_LIST = "/admin/licence?token=" + CoreUtil.getStok("token");
+        
+        CoreUtil.sendAjax(URL_LIST,null,function (res) {
+            if(res.result != null){            
+          
+                $(".layui-fluid input[name=serverid]").val(res.result.serverid);
+                $(".layui-fluid input[name=serical]").val(res.result.serial);               
+                $("#valid").html(res.result.valid_date);
+              
+                form.render(); 
+            }
+        },"GET",false);
+   
+       
+        form.on('submit(submit)', function(data){  
+            CoreUtil.sendAjax(URL_LIST,CoreUtil.encode_str("set",JSON.stringify(data.field),0),function (res) {
+                layer.msg('Success');
+                //window.location.href="/";
+            },"POST",false);    
+        });    
+
+    });
+</script>   
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+ "id":1,
+ "result":[{
+  "procname":"/usr/sbin/sshd",
+  "port":"22",
+  "rx_bytes":"14265",
+  "tx_bytes":"53406"
+},{
+  "procname":"/hiproc/bin/web2hfwd",
+  "port":"9998",
+  "rx_bytes":"682806",
+  "tx_bytes":"396729"
+}],
+"totalRows":2,
+"date":"2024-09-05",
+"error_code":"0"
+}

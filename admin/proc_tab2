@@ -1,0 +1,12 @@
+{
+ "id":1,
+ "result":[],
+"totalRows":0,
+"tcp":"4",
+"udp":"2",
+"icmp":"0",
+"date":"2024-08-29",
+"proc_date":"2024-08-29",
+"k_drv":"0",
+"error_code":"0"
+}

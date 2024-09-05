@@ -1,0 +1,17 @@
+{
+ "id":1,
+ "result":[{
+  "procname":"/hiproc/bin/prochfw",
+  "cpu":"4.0",
+  "mem":"0.6",
+  "memkb":"11820"
+},{
+  "procname":"/usr/lib/systemd/systemd-journald;663dc2a9 (deleted)",
+  "cpu":"1.0",
+  "mem":"0.1",
+  "memkb":"2792"
+}],
+"totalRows":2,
+"date":"2024-09-05",
+"error_code":"0"
+}

@@ -1,0 +1,20 @@
+{
+ "id":1,
+ "result":[{
+"src_ip":"192.168.21.251",
+"ipnum":"47",
+"geoip":"LAN",
+"country":"0",
+"province":"0",
+"risk":"Middle"
+},{
+"src_ip":"192.168.21.252",
+"ipnum":"5",
+"geoip":"LAN",
+"country":"0",
+"province":"0",
+"risk":"low"
+}],
+"totalRows":2,
+"error_code":"0"
+}

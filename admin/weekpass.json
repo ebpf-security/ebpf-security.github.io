@@ -1,0 +1,4 @@
+scanning results:
+127.0.0.1:22 open
+127.0.0.1:9998 open
+[*] WebTitle http://127.0.0.1:9998     code:200 len:8008   title:eBPF FireWall

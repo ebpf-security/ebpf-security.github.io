@@ -1,0 +1,211 @@
+{
+	"success": true,
+	"code": 200,
+	"message": "Success",
+	"data": {
+		"id": "1265476890672672808",
+		"account": "admin",
+		"nickName": "Administrator",
+		"name": "Administrator",
+		"avatar": "1366687498650009602",
+		"birthday": "0",
+		"sex": 1,
+		"email": "",
+		"phone": "",
+		"tel": "",
+		"adminType": 1,
+		"lastLoginIp": "",
+		"lastLoginTime": "",
+		"lastLoginAddress": "-",
+		"lastLoginBrowser": "Chrome",
+		"lastLoginOs": "Windows 11",
+		"loginEmpInfo": {
+			"jobNum": null,
+			"orgId": null,
+			"orgName": null,
+			"extOrgPos": [],
+			"positions": []
+		},
+		"apps": [],
+		"roles": [],
+		"permissions": [],
+		"menus": [{
+			"code": "system",
+			"value": [{
+				"id": "1264622039642255311",
+				"parentId": "0",
+				"title": "Dashboard",
+				"value": "javascript:;",
+				"icon": "layui-icon-home",
+				"weight": 1,
+				"children": [{
+				  "id": "1264622039642255332",
+					"parentId": "1264622039642255311",
+					"title": "Dashboard",
+					"value": "/sshhtml/other/home_ebpf_dump.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "1264622039642255311"
+				}],
+				"pid": "0"
+			},{
+				"id": "1264622039642255311",
+				"parentId": "0",
+				"title": "Process Data",
+				"value": "javascript:;",
+				"icon": "layui-icon-app",
+				"weight": 1,
+				"children": [{
+				  "id": "1264622039642255332",
+					"parentId": "1264622039642255311",
+					"title": "Process",
+					"value": "/sshhtml/other/home3.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "1264622039642255311"
+				},{
+					"id": "1264622039642255332",
+					"parentId": "1264622039642255311",
+					"title": "Outbound IP",
+					"value": "/prochtml/outbound-ip.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "1264622039642255311"
+				},{
+					"id": "1264622039642255332",
+					"parentId": "1264622039642255311",
+					"title": "Outbound DNS",
+					"value": "/prochtml/dns_cap.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "1264622039642255311"
+				},{
+					"id": "1264622039642255332",
+					"parentId": "1264622039642255311",
+					"title": "Unkown Traffic",
+					"value": "/prochtml/other_tcp_udp.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "1264622039642255311"
+				}],
+				"pid": "0"
+			},{
+				"id": "1264622039642255311",
+				"parentId": "0",
+				"title": "Block",
+				"value": "javascript:;",
+				"icon": "layui-icon-reduce-circle",
+				"weight": 1,
+				"children": [{
+					"id": "12646220396422556019",
+					"parentId": "12646220396422553419",
+					"title": "Whitelist Process",
+					"value": "/prochtml/openhfw_white.html",
+					"icon": null,
+					"weight": 5,
+					"children": [],
+					"pid": "12646220396422553419"
+				},{
+					"id": "12646220396422556019",
+					"parentId": "12646220396422553419",
+					"title": "Blacklist Process",
+					"value": "/prochtml/openhfw_black.html",
+					"icon": null,
+					"weight": 5,
+					"children": [],
+					"pid": "12646220396422553419"
+				},{
+					"id": "1264622039642255332",
+					"parentId": "1264622039642255311",
+					"title": "IP Trust",
+					"value": "/html/ip_trust.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "1264622039642255311"
+				},{
+				  "id": "1264622039642255332",
+					"parentId": "1264622039642255311",
+					"title": "IP Blocked",
+					"value": "/html/ip_black.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "1264622039642255311"
+				}],
+				"pid": "0"
+			},{
+				"id": "12646220396422553419",
+				"parentId": "0",
+				"title": "Settings",
+				"value": "javascript:;",
+				"icon": "layui-icon-util",
+				"weight": 2,
+				"children": [{
+					"id": "12646220396422553519",
+					"parentId": "12646220396422553419",
+					"title": "Remote Login",
+					"value": "/sshhtml/remote.html",
+					"icon": null,
+					"weight": 3,
+					"children": [],
+					"pid": "12646220396422553419"
+				}, {
+					"id": "12646220396422556019",
+					"parentId": "12646220396422553419",
+					"title": "Restart",
+					"value": "/sshhtml/reboot.html",
+					"icon": null,
+					"weight": 5,
+					"children": [],
+					"pid": "12646220396422553419"
+				}],
+				"pid": "0"
+			},{
+				"id": "12646220396422553419",
+				"parentId": "0",
+				"title": "Licence",
+				"value": "javascript:;",
+				"icon": "layui-icon-group",
+				"weight": 2,
+				"children": [ {
+					"id": "12646220396422556019",
+					"parentId": "12646220396422553419",
+					"title": "Licence",
+					"value": "/html/licence2.html",
+					"icon": null,
+					"weight": 5,
+					"children": [],
+					"pid": "12646220396422553419"
+				}],
+				"pid": "0"
+			}]
+		}, {
+			"code": "systool",
+			"value": [{
+				"id": "1338864007892807681",
+				"parentId": "0",
+				"title": "Code",
+				"value": "/codeGenerate/index.html",
+				"icon": "layui-icon-app",
+				"weight": 1,
+				"children": [],
+				"pid": "0"
+			}]
+		}],
+		"dataScopes": [],
+		"tenants": null,
+		"enabled": true,
+		"authorities": [],
+		"password": null,
+		"username": "admin",
+		"accountNonExpired": true,
+		"accountNonLocked": true,
+		"credentialsNonExpired": true
+	}
+}

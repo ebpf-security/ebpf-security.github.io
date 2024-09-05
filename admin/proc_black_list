@@ -1,0 +1,10 @@
+{
+ "id":1,
+ "result":[{"enabled":"on","procname":"wget","note":"Prevent RCE vulnerabilities from downloading backdoors"},{"enabled":"on","procname":"curl","note":"Prevent RCE vulnerabilities from transferring files"}],
+"totalRows":16,
+"tcp":"0",
+"udp":"0",
+"icmp":"0",
+"date":"2022-12-02",
+"error_code":"0"
+}

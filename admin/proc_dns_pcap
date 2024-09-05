@@ -1,0 +1,40 @@
+{
+ "id":1,
+ "result":[{
+  "procname":"/usr/bin/wget",
+  "filename":"wget_hfwdns_84050564.pcap",
+  "dns":"www.apple.com",
+  "count":"1",
+  "risk":"--",
+  "note":"--"
+},{
+  "procname":"/usr/bin/wget",
+  "filename":"wget_hfwdns_84050564.pcap",
+  "dns":"one.one.one.one",
+  "count":"1",
+  "risk":"--",
+  "note":"--"
+},{
+  "procname":"/usr/bin/wget",
+  "filename":"wget_hfwdns_84050564.pcap",
+  "dns":"www.google.com",
+  "count":"12",
+  "risk":"--",
+  "note":"--"
+},{
+  "procname":"/usr/bin/curl",
+  "filename":"curl_hfwdns_1602838846.pcap",
+  "dns":"www.google.com",
+  "count":"4",
+  "risk":"--",
+  "note":"--"
+}],
+"totalRows":4,
+"tcp":"4",
+"udp":"3",
+"icmp":"0",
+"date":"2024-09-05",
+"proc_date":"2024-09-05",
+"k_drv":"1",
+"error_code":"0"
+}

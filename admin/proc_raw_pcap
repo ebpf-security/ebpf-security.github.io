@@ -1,0 +1,40 @@
+{
+ "id":1,
+ "result":[{
+  "procname":"/usr/sbin/sshd",
+  "filename":"sshd_1513848991.pcap",
+  "date":"2024-09-05",
+  "risk":"--",
+  "note":"--",
+  "tx_bytes":"65501"
+},{
+  "procname":"/hiproc/bin/web2hfwd",
+  "filename":"web2hfwd_1578940687.pcap",
+  "date":"2024-09-05",
+  "risk":"--",
+  "note":"--",
+  "tx_bytes":"309962"
+},{
+  "procname":"/usr/bin/wget",
+  "filename":"wget_3870954955.pcap",
+  "date":"2024-09-05",
+  "risk":"--",
+  "note":"--",
+  "tx_bytes":"678043"
+},{
+  "procname":"/usr/bin/curl",
+  "filename":"curl_814530269.pcap",
+  "date":"2024-09-05",
+  "risk":"--",
+  "note":"--",
+  "tx_bytes":"652"
+}],
+"totalRows":0,
+"tcp":"3",
+"udp":"2",
+"icmp":"0",
+"date":"2024-09-05",
+"proc_date":"2024-09-05",
+"k_drv":"1",
+"error_code":"0"
+}

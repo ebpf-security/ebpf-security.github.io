@@ -1,0 +1,98 @@
+
+<div class="panel panel-default operation_user">
+    <div class="panel-heading title" style="text-align: center"></div>
+    <div class="layui-card-body">
+    	
+    	<form class="layui-form" action="" style="width: 320px;padding-top: 10px;">
+    		
+    		<div class="layui-form-item layui-hide">				 		   				  
+				   <div class="layui-input-block">
+				      <input type="text" name="old_acc" disabled autocomplete="off" class="layui-input layui-disabled" value="admin">
+				    </div>
+				  </div>
+				  
+				  <div class="layui-form-item">
+				    <label class="layui-form-label">User</label>				   				  
+				   <div class="layui-input-block">
+				      <input type="text" name="new_acc" disabled autocomplete="off" class="layui-input layui-disabled" value="admin">
+				    </div>
+				  </div>
+				  
+				  <div class="layui-form-item">
+				    <label class="layui-form-label">Old passwd</label>
+				    <div class="layui-input-block">
+				      <input type="password" name="old_pwd" required lay-verify="required" placeholder="Please enter" autocomplete="off" class="layui-input">
+				    </div>
+				  </div>
+				  <div class="layui-form-item">
+				    <label class="layui-form-label">New passwd</label>
+				    <div class="layui-input-block">
+				      <input type="password" name="new_pwd" required lay-verify="required|new_pwd" placeholder="Please enter" autocomplete="off" class="layui-input">
+				    </div>
+				  </div>
+				  <div class="layui-form-item">
+				    <label class="layui-form-label">Repeat passwd</label>
+				    <div class="layui-input-block">
+				      <input type="password" name="new_pwd1" required lay-verify="required" placeholder="Please enter" autocomplete="off" class="layui-input">
+				    </div>
+				  </div>
+				  <div class="layui-form-item">
+				    <div class="layui-input-block">
+				      <button class="layui-btn layui-btn-normal" lay-submit lay-filter="adminPassword">Submit</button>
+				      <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">Cancel</button>
+				    </div>
+				  </div>
+				</form>
+    	
+   </div>
+</div>
+
+<script>
+  
+    layui.use(['layer', 'form','jquery','admin'], function () {    	    		  
+	  var URL_LIST = "/admin/administration?token=" + CoreUtil.getStok("token");
+    var form = layui.form;
+    var layer = layui.layer;
+    var $ = jQuery = layui.jquery;
+    var admin = layui.admin;
+
+        form.render();  
+            
+      
+        form.verify({
+          new_pwd : function(value, item){
+            if(value.length < 6){
+                return "The password length cannot be less than 6 characters";
+            }
+          }
+        });
+           
+        form.on('submit(adminPassword)', function (data) {          	 
+            data = data.field;
+            if (data.new_acc == '') {
+                layer.msg('Username can not be empty');
+                return false;
+            }
+          
+            if (data.new_pwd != data.new_pwd1) {
+                layer.msg('The password entered twice is not the same');
+                return false;
+            }            
+            
+            var loadIndex = layer.load(2);
+            
+            CoreUtil.sendAjax(URL_LIST, CoreUtil.encode_pwd(JSON.stringify(data)), function (res) {   
+            	   layer.close(loadIndex);
+            	   admin.closeDialog('[lay-filter="adminPassword"]');
+                 layer.msg("Successfully changed");
+                                
+            }, "POST", false, function (res) {            	
+                    layer.msg("failed");
+            });
+                       
+            
+            return false;
+        });
+    });
+</script>
+</html>
